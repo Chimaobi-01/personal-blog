@@ -13,274 +13,353 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo">
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__nav__logo">
                 Chimaobi
             </div>
 
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/projects.html">Projects</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/news.html">Newsletter</a></li>
+            <ul class="header__nav__list">
+                <li class="header__nav__list_item">
+                    <a class="header__nav__list_item__link" href="/">
+                        Home
+                    </a>
+                </li>
+                <li class="header__nav__list_item">
+                    <a class="header__nav__list_item__link" href="/projects.html">
+                        Projects
+                    </a>
+                </li>
+                <li class="header__nav__list_item">
+                    <a class="header__nav__list_item__link" href="/about.html">
+                        About
+                    </a>
+                </li>
+                <li class="header__nav__list_item">
+                    <a class="header__nav__list_item__link" href="/news.html">
+                        Newsletter
+                    </a>
+                </li>
             </ul>
 
-            <div class="Switch">
-                <button id="theme-toggle" class="Switch__button">
-                    <i id="theme-icon" class="fas fa-sun Switch__button__icon"></i>
-                    <span class="Switch__button__elipse"></span>
+            <div class="header__nav__theme_switch">
+                <button class="header__nav__theme_switch__switch theme-toggle">
+                    <i class="fas fa-sun header__nav__theme_switch__switch__icon theme-icon"></i>
+                    <span class="header__nav__theme_switch__switch__elipse"></span>
                 </button>
+            </div>
+
+            <div class="menu">
+                <i id="menu-bar" class="fa-solid fa-bars menu__bars_icon"></i>
+
+                <div id="menu__overlay" class="menu__overlay">
+                    <div class="menu__overlay__logo">
+                        Chimaobi
+                    </div>
+
+                    <menu class="menu__overlay__list">
+                        <li class="menu__overlay__list_item">
+                            <a class="menu__overlay__list_item__link" href="/">
+                                Home
+                            </a>
+                        </li>
+                        <li class="menu__overlay__list_item">
+                            <a class="menu__overlay__list_item__link" href="/projects.html">
+                                Projects
+                            </a>
+                        </li>
+                        <li class="menu__overlay__list_item">
+                            <a class="menu__overlay__list_item__link" href="/about.html">
+                                About
+                            </a>
+                        </li>
+                        <li class="menu__overlay__list_item">
+                            <a class="menu__overlay__list_item__link" href="/news.html">
+                                Newsletter
+                            </a>
+                        </li>
+                    </menu>
+
+                    <div class="menu__overlay__theme_switch">
+                        <button class="menu__overlay__theme_switch__switch theme-toggle-mobile">
+                            <i class="fas fa-sun menu__overlay__theme_switch__switch__icon theme-icon-mobile"></i>
+                            <span class="menu__overlay__theme_switch__switch__elipse"></span>
+                        </button>
+                    </div>
+
+                    <i id="close_overlay" class="fa-solid fa-xmark menu__overlay__close_icon"></i>
+                </div>
             </div>
         </nav>
 
-        <h1>THE BLOG</h1>
+        <h1 class="header__title">THE BLOG</h1>
     </header>
 
     <main>
-        <section>
-            <h2>Recent blog posts</h2>
 
-            <div>
-                <div class="Card">
-                    <img src="/images/card-image10.png" alt="placeholder image">
+        <section class="recent_post">
+            <h2 class="recent_post__title">Recent blog posts</h2>
 
-                    <div>
-                        <div>Olivia Rhye • 1 Jan 2023</div>
-                        <h3>
+            <div class="recent_post__list">
+                <div class="article recent_post__list__item1">
+                    <div class="article__photo">
+                        <img class="article__photo__image" src="/images/card-image10.png" alt="placeholder image">
+                    </div>
+
+                    <div class="article__text">
+                        <div class="article__text__author">Olivia Rhye • 1 Jan 2023</div>
+                        <h3 class="article__text__title">
                             UX review presentations
-                            <i class="fas fa-arrow-up"></i>
+                            <i class="fas fa-arrow-up article__text__title__redirect"></i>
                         </h3>
-                        <p>
+                        <p class="article__text__summary">
                             How do you create compelling presentations that wow your colleagues and impress your
                             managers?
                         </p>
-                        <ul>
-                            <li>Design</li>
-                            <li>Research</li>
-                            <li>Presentation</li>
+                        <ul class="article__text__tags">
+                            <li class="article__text__tags__tag--1 article__text__tags__tag">Design</li>
+                            <li class="article__text__tags__tag--2 article__text__tags__tag">Research</li>
+                            <li class="article__text__tags__tag--3 article__text__tags__tag">Presentation</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="Card">
-                    <img src="/images/card-image1.png" alt="placeholder image">
+                <div class="article recent_post__list__item2">
+                    <div class="article__photo">
+                        <img class="article__photo__image" src="/images/card-image1.png" alt="placeholder image">
+                    </div>
 
-                    <div>
-                        <div>Phoenix Baker • 1 Jan 2025</div>
-                        <h3>
+                    <div class="article__text">
+                        <div class="article__text__author">Phoenix Baker • 1 Jan 2025</div>
+                        <h3 class="article__text__title">
                             Migration to Linear 101
-                            <i class="fas fa-arrow-up"></i>
+                            <i class="fas fa-arrow-up article__text__title__redirect"></i>
                         </h3>
-                        <p>
+                        <p class="article__text__summary">
                             Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to
                             get...
                         </p>
-                        <ul>
-                            <li>Design</li>
-                            <li>Research</li>
+                        <ul class="article__text__tags">
+                            <li class="article__text__tags__tag--1 article__text__tags__tag">Design</li>
+                            <li class="article__text__tags__tag--2 article__text__tags__tag">Research</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="Card">
-                    <img src="/images/card-image2.png" alt="placeholder image">
+                <div class="article recent_post__list__item3">
+                    <div class="article__photo">
+                        <img class="article__photo__image" src="/images/card-image2.png" alt="placeholder image">
+                    </div>
 
-                    <div>
-                        <div>Lana Steiner • 1 Jan 2023</div>
-                        <h3>
+                    <div class="article__text">
+                        <div class="article__text__author">Lana Steiner • 1 Jan 2023</div>
+                        <h3 class="article__text__title">
                             Building your API Stack
-                            <i class="fas fa-arrow-up"></i>
+                            <i class="fas fa-arrow-up article__text__title__redirect"></i>
                         </h3>
-                        <p>
+                        <p class="article__text__summary">
                             The rise of RESTful APIs has been met by a rise in tools for creating, testing, and manag...
                         </p>
-                        <ul>
-                            <li>Design</li>
-                            <li>Research</li>
+                        <ul class="article__text__tags">
+                            <li class="article__text__tags__tag--1 article__text__tags__tag">Design</li>
+                            <li class="article__text__tags__tag--2 article__text__tags__tag">Research</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="Card">
-                    <img src="/images/card-image3.png" alt="placeholder image">
+                <div class="article recent_post__list__item4">
+                    <div class="article__photo">
+                        <img class="article__photo__image" src="/images/card-image3.png" alt="placeholder image">
+                    </div>
 
-                    <div>
-                        <div>Olivia Rhye • 1 Jan 2023</div>
-                        <h3>
+                    <div class="article__text">
+                        <div class="article__text__author">Olivia Rhye • 1 Jan 2023</div>
+                        <h3 class="article__text__title">
                             Grid system for better Design User Interface
-                            <i class="fas fa-arrow-up"></i>
+                            <i class="fas fa-arrow-up article__text__title__redirect"></i>
                         </h3>
-                        <p>
+                        <p class="article__text__summary">
                             A grid system is a design tool used to arrange content on a webpage. It is a series of
                             vertical and horizontal lines that create a matrix of intersecting points, which can be used
                             to align and organize page elements. Grid systems are used to create a consistent look and
                             feel across a website, and can help to make the layout more visually appealing and easier to
                             navigate.
                         </p>
-                        <ul>
-                            <li>Design</li>
-                            <li>Interface</li>
+                        <ul class="article__text__tags">
+                            <li class="article__text__tags__tag--1 article__text__tags__tag">Design</li>
+                            <li class="article__text__tags__tag--2 article__text__tags__tag">Interface</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section>
-            <h2>All blog posts</h2>
+        <section class="all_post">
+            <h2 class="all_post__title">All blog posts</h2>
 
-            <div>
-                <div class="Card">
-                    <img src="/images/card-image4.png" alt="placeholder image">
+            <div class="all_post__list">
+                <div class="article all_post__list__item1">
+                    <div class="article__photo">
+                        <img class="article__photo__image" src="/images/card-image4.png" alt="placeholder image">
+                    </div>
 
-                    <div>
-                        <div>Alec Whitten • 1 Jan 2023</div>
-                        <h3>
+                    <div class="article__text">
+                        <div class="article__text__author">Alec Whitten • 1 Jan 2023</div>
+                        <h3 class="article__text__title">
                             Bill Walsh leadership lessons
-                            <i class="fas fa-arrow-up"></i>
+                            <i class="fas fa-arrow-up article__text__title__redirect"></i>
                         </h3>
-                        <p>
+                        <p class="article__text__summary">
                             Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?
                         </p>
-                        <ul>
-                            <li>Leadership</li>
-                            <li>Management</li>
+                        <ul class="article__text__tags">
+                            <li class="article__text__tags__tag--1 article__text__tags__tag">Leadership</li>
+                            <li class="article__text__tags__tag--2 article__text__tags__tag">Management</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="Card">
-                    <img src="/images/card-image5.png" alt="placeholder image">
+                <div class="article all_post__list__item2">
+                    <div class="article__photo">
+                        <img class="article__photo__image" src="/images/card-image5.png" alt="placeholder image">
+                    </div>
 
-                    <div>
-                        <div>Demi Wllkison • 1 Jan 2023</div>
-                        <h3>
+                    <div class="article__text">
+                        <div class="article__text__author">Demi Wllkison • 1 Jan 2023</div>
+                        <h3 class="article__text__title">
                             PM mental models
-                            <i class="fas fa-arrow-up"></i>
+                            <i class="fas fa-arrow-up article__text__title__redirect"></i>
                         </h3>
-                        <p>
+                        <p class="article__text__summary">
                             Mental models are simple expressions of complex processes or relationships.
                         </p>
-                        <ul>
-                            <li>Product</li>
-                            <li>Research</li>
-                            <li>Frameworks</li>
+                        <ul class="article__text__tags">
+                            <li class="article__text__tags__tag--1 article__text__tags__tag">Product</li>
+                            <li class="article__text__tags__tag--2 article__text__tags__tag">Research</li>
+                            <li class="article__text__tags__tag--3 article__text__tags__tag">Frameworks</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="Card">
-                    <img src="/images/card-image6.png" alt="placeholder image">
+                <div class="article all_post__list__item3">
+                    <div class="article__photo">
+                        <img class="article__photo__image" src="/images/card-image6.png" alt="placeholder image">
+                    </div>
 
-                    <div>
-                        <div>Candice Wu • 1 Jan 2023</div>
-                        <h3>
+                    <div class="article__text">
+                        <div class="article__text__author">Candice Wu • 1 Jan 2023</div>
+                        <h3 class="article__text__title">
                             What is Wireframing?
-                            <i class="fas fa-arrow-up"></i>
+                            <i class="fas fa-arrow-up article__text__title__redirect"></i>
                         </h3>
-                        <p>
+                        <p class="article__text__summary">
                             Introduction to Wireframing and its Principles. Learn from the best in the industry.
                         </p>
-                        <ul>
-                            <li>Design</li>
-                            <li>Research</li>
+                        <ul class="article__text__tags">
+                            <li class="article__text__tags__tag--1 article__text__tags__tag">Design</li>
+                            <li class="article__text__tags__tag--2 article__text__tags__tag">Research</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="Card">
-                    <img src="/images/card-image7.png" alt="placeholder image">
+                <div class="article all_post__list__item4">
+                    <div class="article__photo">
+                        <img class="article__photo__image" src="/images/card-image7.png" alt="placeholder image">
+                    </div>
 
-                    <div>
-                        <div>Natail Craig • 1 Jan 2023</div>
-                        <h3>
+                    <div class="article__text">
+                        <div class="article__text__author">Natail Craig • 1 Jan 2023</div>
+                        <h3 class="article__text__title">
                             How collaboration makes us better designers
-                            <i class="fas fa-arrow-up"></i>
+                            <i class="fas fa-arrow-up article__text__title__redirect"></i>
                         </h3>
-                        <p>
+                        <p class="article__text__summary">
                             Collaboration can make our teams stronger, and our individual designs better.
                         </p>
-                        <ul>
-                            <li>Design</li>
-                            <li>Research</li>
+                        <ul class="article__text__tags">
+                            <li class="article__text__tags__tag--1 article__text__tags__tag">Design</li>
+                            <li class="article__text__tags__tag--2 article__text__tags__tag">Research</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="Card">
-                    <img src="/images/card-image8.png" alt="placeholder image">
+                <div class="article all_post__list__item5">
+                    <div class="article__photo">
+                        <img class="article__photo__image" src="/images/card-image8.png" alt="placeholder image">
+                    </div>
 
-                    <div>
-                        <div>Drew Cano • 1 Jan 2023</div>
-                        <h3>
+                    <div class="article__text">
+                        <div class="article__text__author">Drew Cano • 1 Jan 2023</div>
+                        <h3 class="article__text__title">
                             Our top 10 Javascript frameworks to use
-                            <i class="fas fa-arrow-up"></i>
+                            <i class="fas fa-arrow-up article__text__title__redirect"></i>
                         </h3>
-                        <p>
+                        <p class="article__text__summary">
                             JavaScript frameworks make development easy with extensive features and functionalities.
                         </p>
-                        <ul>
-                            <li>Software Development</li>
-                            <li>Tools</li>
-                            <li>SaaS</li>
+                        <ul class="article__text__tags">
+                            <li class="article__text__tags__tag--1 article__text__tags__tag">Software Development</li>
+                            <li class="article__text__tags__tag--2 article__text__tags__tag">Tools</li>
+                            <li class="article__text__tags__tag--3 article__text__tags__tag">SaaS</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="Card">
-                    <img src="/images/card-image9.png" alt="placeholder image">
+                <div class="article all_post__list__item6">
+                    <div class="article__photo">
+                        <img class="article__photo__image" src="/images/card-image9.png" alt="placeholder image">
+                    </div>
 
-                    <div>
-                        <div>Orlando Diggs • 1 Jan 2023</div>
-                        <h3>
-                           Podcast: Creating a better CX Community
-                            <i class="fas fa-arrow-up"></i>
+                    <div class="article__text">
+                        <div class="article__text__author">Orlando Diggs • 1 Jan 2023</div>
+                        <h3 class="article__text__title">
+                            Podcast: Creating a better CX Community
+                            <i class="fas fa-arrow-up article__text__title__redirect"></i>
                         </h3>
-                        <p>
+                        <p class="article__text__summary">
                             Starting a community doesn’t need to be complicated, but how do you get started?
                         </p>
-                        <ul>
-                            <li>Podcasts</li>
-                            <li>Customer Success</li>
+                        <ul class="article__text__tags">
+                            <li class="article__text__tags__tag--1 article__text__tags__tag">Podcasts</li>
+                            <li class="article__text__tags__tag--2 article__text__tags__tag">Customer Success</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <div>
-            <button>
-                <i class="fas fa-arrow-left"></i>
+        <div class="pagination">
+            <button class="pagination__previous">
+                <i class="fas fa-arrow-left pagination__previous__icon"></i>
                 Previous
             </button>
 
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>...</li>
-                <li>8</li>
-                <li>9</li>
-                <li>10</li>
+            <ul class="pagination__page">
+                <li class="pagination__page__number pagination__page__1">1</li>
+                <li class="pagination__page__number pagination__page__2">2</li>
+                <li class="pagination__page__number pagination__page__3">3</li>
+                <li class="pagination__page__number pagination__page__undefined">...</li>
+                <li class="pagination__page__number pagination__page__8">8</li>
+                <li class="pagination__page__number pagination__page__9">9</li>
+                <li class="pagination__page__number pagination__page__10">10</li>
             </ul>
 
-            <button>
+            <button class="pagination__next">
                 Next
-                <i class="fas fa-arrow-right"></i>
+                <i class="fas fa-arrow-right pagination__next__icon"></i>
             </button>
         </div>
     </main>
 
-    <footer>
+    <footer class="footer">
         © 2023
 
-        <ul>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">Email</a></li>
-            <li><a href="#">RSS feed</a></li>
-            <li><a href="#">Add to Feedly</a></li>
+        <ul class="footer__media">
+            <li class="footer__media__item"><a class="footer__media__item__link" href="#">Twitter</a></li>
+            <li class="footer__media__item"><a class="footer__media__item__link" href="#">LinkedIn</a></li>
+            <li class="footer__media__item"><a class="footer__media__item__link" href="#">Email</a></li>
+            <li class="footer__media__item"><a class="footer__media__item__link" href="#">RSS feed</a></li>
+            <li class="footer__media__item"><a class="footer__media__item__link" href="#">Add to Feedly</a></li>
         </ul>
     </footer>
 </body>

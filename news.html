@@ -8,45 +8,107 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <link rel="stylesheet" href="global.css">
+    <script defer src="script.js"></script>
+
     <title>News - personal blog</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo">
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__nav__logo">
                 Chimaobi
             </div>
 
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/projects.html">Projects</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/news.html">Newsletter</a></li>
+            <ul class="header__nav__list">
+                <li class="header__nav__list_item">
+                    <a class="header__nav__list_item__link" href="/">
+                        Home
+                    </a>
+                </li>
+                <li class="header__nav__list_item">
+                    <a class="header__nav__list_item__link" href="/projects.html">
+                        Projects
+                    </a>
+                </li>
+                <li class="header__nav__list_item">
+                    <a class="header__nav__list_item__link" href="/about.html">
+                        About
+                    </a>
+                </li>
+                <li class="header__nav__list_item">
+                    <a class="header__nav__list_item__link" href="/news.html">
+                        Newsletter
+                    </a>
+                </li>
             </ul>
 
-            <div class="container">
-                <button id="theme-toggle" class="switch">
-                    <i id="theme-icon" class="fas fa-sun"></i>
+            <div class="header__nav__theme_switch">
+                <button class="header__nav__theme_switch__switch theme-toggle">
+                    <i class="fas fa-sun header__nav__theme_switch__switch__icon theme-icon"></i>
+                    <span class="header__nav__theme_switch__switch__elipse"></span>
                 </button>
+            </div>
+
+            <div class="menu">
+                <i id="menu-bar" class="fa-solid fa-bars menu__bars_icon"></i>
+
+                <div id="menu__overlay" class="menu__overlay">
+                    <div class="menu__overlay__logo">
+                        Chimaobi
+                    </div>
+
+                    <menu class="menu__overlay__list">
+                        <li class="menu__overlay__list_item">
+                            <a class="menu__overlay__list_item__link" href="/">
+                                Home
+                            </a>
+                        </li>
+                        <li class="menu__overlay__list_item">
+                            <a class="menu__overlay__list_item__link" href="/projects.html">
+                                Projects
+                            </a>
+                        </li>
+                        <li class="menu__overlay__list_item">
+                            <a class="menu__overlay__list_item__link" href="/about.html">
+                                About
+                            </a>
+                        </li>
+                        <li class="menu__overlay__list_item">
+                            <a class="menu__overlay__list_item__link" href="/news.html">
+                                Newsletter
+                            </a>
+                        </li>
+                    </menu>
+
+                    <div class="menu__overlay__theme_switch">
+                        <button class="menu__overlay__theme_switch__switch theme-toggle-mobile">
+                            <i class="fas fa-sun menu__overlay__theme_switch__switch__icon theme-icon-mobile"></i>
+                            <span class="menu__overlay__theme_switch__switch__elipse"></span>
+                        </button>
+                    </div>
+
+                    <i id="close_overlay" class="fa-solid fa-xmark menu__overlay__close_icon"></i>
+                </div>
             </div>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h1>Stories and interviews</h1>
+        <section class="subscribe">
+            <span class="subscribe__sub_title"></span>
+            <h1 class="subscribe__main_title">Stories and interviews</h1>
 
-            <p>
+            <p class="subscribe__description">
                 Subscribe to learn about new product features, the latest in technology, solutions, and updates.
             </p>
 
-            <form action="">
-                <div>
-                    <input type="email" name="email">
-                    <button type="submit">Subscribe</button>
+            <form action="" class="subscribe__form">
+                <div class="subscribe__form__input">
+                    <input type="email" name="email" class="subscribe__form__input__email">
+                    <button type="submit" class="subscribe__form__input__submit">Subscribe</button>
                 </div>
-                <p>
+                <p class="subscribe__form__privacy_policy">
                     We care about your data in our
                     <a href="#">privacy policy</a>
                 </p>
