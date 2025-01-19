@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="global.css">
     <script defer src="script.js"></script>
 
-    <title>News - personal blog</title>
+    <title>Blog - News</title>
 </head>
 
 <body>
@@ -96,7 +96,7 @@
 
     <main>
         <section class="subscribe">
-            <span class="subscribe__sub_title"></span>
+            <span class="subscribe__sub_title">Newsletter</span>
             <h1 class="subscribe__main_title">Stories and interviews</h1>
 
             <p class="subscribe__description">
@@ -105,73 +105,80 @@
 
             <form action="" class="subscribe__form">
                 <div class="subscribe__form__input">
-                    <input type="email" name="email" class="subscribe__form__input__email">
+                    <input type="email" name="email" class="subscribe__form__input__email" placeholder="Enter your email">
                     <button type="submit" class="subscribe__form__input__submit">Subscribe</button>
                 </div>
                 <p class="subscribe__form__privacy_policy">
                     We care about your data in our
-                    <a href="#">privacy policy</a>
+                    <a href="#" class="subscribe__form__privacy_policy__link" >privacy policy</a>
                 </p>
             </form>
         </section>
 
-        <section>
-            <h2>All blog posts</h2>
+        <section class="all_post">
+            <h2 class="all_post__title">All blog posts</h2>
 
-            <div>
-                <div class="Card">
-                    <img src="/images/card-image9.png" alt="placeholder image">
+            <div class="all_post__list">
+                <div class="article all_post__list__item1">
+                    <div class="article__photo">
+                        <img class="article__photo__image" src="/images/card-image4.png" alt="placeholder image">
+                    </div>
 
-                    <div>
-                        <div>Orlando Diggs • 1 Jan 2023</div>
-                        <h3>
-                            Podcast: Creating a better CX Community
-                            <i class="fas fa-arrow-up"></i>
+                    <div class="article__text">
+                        <div class="article__text__author">Alec Whitten • 1 Jan 2023</div>
+                        <h3 class="article__text__title">
+                            Bill Walsh leadership lessons
+                            <i class="fas fa-arrow-up article__text__title__redirect"></i>
                         </h3>
-                        <p>
-                            Starting a community doesn’t need to be complicated, but how do you get started?
+                        <p class="article__text__summary">
+                            Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?
                         </p>
-                        <ul>
-                            <li>Podcasts</li>
-                            <li>Customer Success</li>
+                        <ul class="article__text__tags">
+                            <li class="article__text__tags__tag--1 article__text__tags__tag">Leadership</li>
+                            <li class="article__text__tags__tag--2 article__text__tags__tag">Management</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="Card">
-                    <img src="/images/card-image9.png" alt="placeholder image">
+                <div class="article all_post__list__item2">
+                    <div class="article__photo">
+                        <img class="article__photo__image" src="/images/card-image5.png" alt="placeholder image">
+                    </div>
 
-                    <div>
-                        <div>Orlando Diggs • 1 Jan 2023</div>
-                        <h3>
-                            Podcast: Creating a better CX Community
-                            <i class="fas fa-arrow-up"></i>
+                    <div class="article__text">
+                        <div class="article__text__author">Demi Wllkison • 1 Jan 2023</div>
+                        <h3 class="article__text__title">
+                            PM mental models
+                            <i class="fas fa-arrow-up article__text__title__redirect"></i>
                         </h3>
-                        <p>
-                            Starting a community doesn’t need to be complicated, but how do you get started?
+                        <p class="article__text__summary">
+                            Mental models are simple expressions of complex processes or relationships.
                         </p>
-                        <ul>
-                            <li>Podcasts</li>
-                            <li>Customer Success</li>
+                        <ul class="article__text__tags">
+                            <li class="article__text__tags__tag--1 article__text__tags__tag">Product</li>
+                            <li class="article__text__tags__tag--2 article__text__tags__tag">Research</li>
+                            <li class="article__text__tags__tag--3 article__text__tags__tag">Frameworks</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="Card">
-                    <img src="/images/card-image9.png" alt="placeholder image">
+                <div class="article all_post__list__item3">
+                    <div class="article__photo">
+                        <img class="article__photo__image" src="/images/card-image6.png" alt="placeholder image">
+                    </div>
 
-                    <div>
-                        <div>Orlando Diggs • 1 Jan 2023</div>
-                        <h3>
-                            Podcast: Creating a better CX Community
-                            <i class="fas fa-arrow-up"></i>
+                    <div class="article__text">
+                        <div class="article__text__author">Candice Wu • 1 Jan 2023</div>
+                        <h3 class="article__text__title">
+                            What is Wireframing?
+                            <i class="fas fa-arrow-up article__text__title__redirect"></i>
                         </h3>
-                        <p>
-                            Starting a community doesn’t need to be complicated, but how do you get started?
+                        <p class="article__text__summary">
+                            Introduction to Wireframing and its Principles. Learn from the best in the industry.
                         </p>
-                        <ul>
-                            <li>Podcasts</li>
-                            <li>Customer Success</li>
+                        <ul class="article__text__tags">
+                            <li class="article__text__tags__tag--1 article__text__tags__tag">Design</li>
+                            <li class="article__text__tags__tag--2 article__text__tags__tag">Research</li>
                         </ul>
                     </div>
                 </div>
@@ -179,15 +186,15 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         © 2023
 
-        <ul>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">Email</a></li>
-            <li><a href="#">RSS feed</a></li>
-            <li><a href="#">Add to Feedly</a></li>
+        <ul class="footer__media">
+            <li class="footer__media__item"><a class="footer__media__item__link" href="#">Twitter</a></li>
+            <li class="footer__media__item"><a class="footer__media__item__link" href="#">LinkedIn</a></li>
+            <li class="footer__media__item"><a class="footer__media__item__link" href="#">Email</a></li>
+            <li class="footer__media__item"><a class="footer__media__item__link" href="#">RSS feed</a></li>
+            <li class="footer__media__item"><a class="footer__media__item__link" href="#">Add to Feedly</a></li>
         </ul>
     </footer>
 </body>

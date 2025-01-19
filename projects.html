@@ -8,143 +8,213 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <link rel="stylesheet" href="global.css">
-    <title>Projects</title>
+    <script defer src="script.js"></script>
+    <title>Blog - Projects</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo">
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__nav__logo">
                 Chimaobi
             </div>
 
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/projects.html">Projects</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/news.html">Newsletter</a></li>
+            <ul class="header__nav__list">
+                <li class="header__nav__list_item">
+                    <a class="header__nav__list_item__link" href="/">
+                        Home
+                    </a>
+                </li>
+                <li class="header__nav__list_item">
+                    <a class="header__nav__list_item__link" href="/projects.html">
+                        Projects
+                    </a>
+                </li>
+                <li class="header__nav__list_item">
+                    <a class="header__nav__list_item__link" href="/about.html">
+                        About
+                    </a>
+                </li>
+                <li class="header__nav__list_item">
+                    <a class="header__nav__list_item__link" href="/news.html">
+                        Newsletter
+                    </a>
+                </li>
             </ul>
 
-            <div class="container">
-                <button id="theme-toggle" class="switch">
-                    <i id="theme-icon" class="fas fa-sun"></i>
+            <div class="header__nav__theme_switch">
+                <button class="header__nav__theme_switch__switch theme-toggle">
+                    <i class="fas fa-sun header__nav__theme_switch__switch__icon theme-icon"></i>
+                    <span class="header__nav__theme_switch__switch__elipse"></span>
                 </button>
+            </div>
+
+            <div class="menu">
+                <i id="menu-bar" class="fa-solid fa-bars menu__bars_icon"></i>
+
+                <div id="menu__overlay" class="menu__overlay">
+                    <div class="menu__overlay__logo">
+                        Chimaobi
+                    </div>
+
+                    <menu class="menu__overlay__list">
+                        <li class="menu__overlay__list_item">
+                            <a class="menu__overlay__list_item__link" href="/">
+                                Home
+                            </a>
+                        </li>
+                        <li class="menu__overlay__list_item">
+                            <a class="menu__overlay__list_item__link" href="/projects.html">
+                                Projects
+                            </a>
+                        </li>
+                        <li class="menu__overlay__list_item">
+                            <a class="menu__overlay__list_item__link" href="/about.html">
+                                About
+                            </a>
+                        </li>
+                        <li class="menu__overlay__list_item">
+                            <a class="menu__overlay__list_item__link" href="/news.html">
+                                Newsletter
+                            </a>
+                        </li>
+                    </menu>
+
+                    <div class="menu__overlay__theme_switch">
+                        <button class="menu__overlay__theme_switch__switch theme-toggle-mobile">
+                            <i class="fas fa-sun menu__overlay__theme_switch__switch__icon theme-icon-mobile"></i>
+                            <span class="menu__overlay__theme_switch__switch__elipse"></span>
+                        </button>
+                    </div>
+
+                    <i id="close_overlay" class="fa-solid fa-xmark menu__overlay__close_icon"></i>
+                </div>
             </div>
         </nav>
 
-        <h1>PROJECTS</h1>
+        <h1 class="header__title">PROJECTS</h1>
     </header>
 
-    <main>
-        <h2>List Project</h2>
+    <main class="project">
+        <h2 class="project__title">List Project</h2>
 
-        <div>
-            <div class="Card">
-                <img src="/images/card-image9.png" alt="placeholder image">
+        <div class="project__list">
+            <div class="article project__list__item1">
+                <div class="article__photo">
+                    <img class="article__photo__image" src="/images/card-image9.png" alt="placeholder image">
+                </div>
 
-                <div>
-                    <h3>
+                <div class="article__text">
+                    <h3 class="article__text__title">
                         User Experience Design Dashboard Hotel Management
-                        <i class="fas fa-arrow-up"></i>
+                        <i class="fas fa-arrow-up article__text__title__redirect"></i>
                     </h3>
-                    <p>
-                        n the context of user experience (UX) design, a hotel management dashboard should be designed with the needs and goals of the hotel staff in mind. This means creating a clear and intuitive interface that allows staff to easily access and use the various tools and features of the dashboard.
+                    <p class="article__text__summary">
+                        In the context of user experience (UX) design, a hotel management dashboard should be designed with the needs and goals of the hotel staff in mind. This means creating a clear and intuitive interface that allows staff to easily access and use the various tools and features of the dashboard.
                     </p>
-                    <ul>
-                        <li>Design</li>
-                        <li>Research</li>
-                        <li>Presentation</li>
+                    <ul class="article__text__tags">
+                        <li class="article__text__tags__tag article__text__tags__tag--1">Design</li>
+                        <li class="article__text__tags__tag article__text__tags__tag--2">Research</li>
+                        <li class="article__text__tags__tag article__text__tags__tag--3">Presentation</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="Card">
-                <img src="/images/card-image7.png" alt="placeholder image">
+            <div class="article project__list__item2">
+                <div class="article__photo">
+                    <img class="article__photo__image" src="/images/card-image7.png" alt="placeholder image">
+                </div>
 
-                <div>
-                    <h3>
+                <div class="article__text">
+                    <h3 class="article__text__title">
                         Bring of User Experience Design to Policy Making, How to Impact Society
-                        <i class="fas fa-arrow-up"></i>
+                        <i class="fas fa-arrow-up article__text__title__redirect"></i>
                     </h3>
-                    <p>
+                    <p class="article__text__summary">
                         User experience (UX) design is a discipline that focuses on creating products and services that are easy to use, efficient, and enjoyable for users. In the context of policy making, UX design can be used to create policies that are effec
                     </p>
-                    <ul>
-                        <li>Research</li>
-                        <li>Presentation</li>
+                    <ul class="article__text__tags">
+                        <li class="article__text__tags__tag article__text__tags__tag--1">Research</li>
+                        <li class="article__text__tags__tag article__text__tags__tag--2">Presentation</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="Card">
-                <img src="/images/card-image5.png" alt="placeholder image">
+            <div class="article project__list__item3">
+                <div class="article__photo">
+                    <img class="article__photo__image" src="/images/card-image5.png" alt="placeholder image">
+                </div>
 
-                <div>
-                    <h3>
+                <div class="article__text">
+                    <h3 class="article__text__title">
                         UX review presentatiBringing Design Process to Teams, How to Solve User Problems with Data & Inclusive Collaboration Designons
-                        <i class="fas fa-arrow-up"></i>
+                        <i class="fas fa-arrow-up article__text__title__redirect"></i>
                     </h3>
-                    <p>
+                    <p class="article__text__summary">
                         There are many different design processes that can be followed when creating a hotel management dashboard. Here are some tips for bringing a design process to teams and using data and inclusive collaboration to solve user problems
                     </p>
-                    <ul>
-                        <li>Design</li>
-                        <li>Research</li>
-                        <li>Presentation</li>
-                        <li>Collaboration</li>
+                    <ul class="article__text__tags">
+                        <li class="article__text__tags__tag article__text__tags__tag--1">Design</li>
+                        <li class="article__text__tags__tag article__text__tags__tag--2">Research</li>
+                        <li class="article__text__tags__tag article__text__tags__tag--3">Presentation</li>
+                        <li class="article__text__tags__tag article__text__tags__tag--4">Collaboration</li>
                     </ul>
+                 </div>
+             </div>
+
+            <div class="article project__list__item4">
+                <div class="article__photo">
+                    <img class="article__photo__image" src="/images/card-image3.png" alt="placeholder image">
                 </div>
-            </div>
 
-            <div class="Card">
-                <img src="/images/card-image3.png" alt="placeholder image">
-
-                <div>
-                    <h3>
+                <div class="article__text">
+                    <h3 class="article__text__title">
                         Icon Package of Slin Icon
-                        <i class="fas fa-arrow-up"></i>
+                        <i class="fas fa-arrow-up article__text__title__redirect"></i>
                     </h3>
-                    <p>
+                    <p class="article__text__summary">
                         An icon package is a collection of icons that can be used in various design projects, such as website design, app development, and graphic design.
                     </p>
-                    <ul>
-                        <li>Design</li>
-                        <li>Branding</li>
-                        <li>Identity</li>
+                    <ul class="article__text__tags">
+                        <li class="article__text__tags__tag article__text__tags__tag--1">Design</li>
+                        <li class="article__text__tags__tag article__text__tags__tag--2">Branding</li>
+                        <li class="article__text__tags__tag article__text__tags__tag--3">Identity</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="Card">
-                <img src="/images/card-image1.png" alt="placeholder image">
+            <div class="article project__list__item5">
+                <div class="article__photo">
+                    <img class="article__photo__image" src="/images/card-image1.png" alt="placeholder image">
+                </div>
 
-                <div>
-                    <h3>
+                <div class="article__text">
+                    <h3 class="article__text__title">
                        UX review presentations
-                        <i class="fas fa-arrow-up"></i>
+                        <i class="fas fa-arrow-up article__text__title__redirect"></i>
                     </h3>
-                    <p>
+                    <p class="article__text__summary">
                         How do you create compelling presentations that wow your colleagues and impress your managers?
                     </p>
-                    <ul>
-                        <li>Design</li>
-                        <li>Research</li>
-                        <li>Presentation</li>
+                    <ul class="article__text__tags">
+                        <li class="article__text__tags__tag article__text__tags__tag--1">Design</li>
+                        <li class="article__text__tags__tag article__text__tags__tag--2">Research</li>
+                        <li class="article__text__tags__tag article__text__tags__tag--3">Presentation</li>
                     </ul>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer>
+    <footer class="footer">
         © 2023
 
-        <ul>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">Email</a></li>
-            <li><a href="#">RSS feed</a></li>
-            <li><a href="#">Add to Feedly</a></li>
+        <ul class="footer__media">
+            <li class="footer__media__item"><a class="footer__media__item__link" href="#">Twitter</a></li>
+            <li class="footer__media__item"><a class="footer__media__item__link" href="#">LinkedIn</a></li>
+            <li class="footer__media__item"><a class="footer__media__item__link" href="#">Email</a></li>
+            <li class="footer__media__item"><a class="footer__media__item__link" href="#">RSS feed</a></li>
+            <li class="footer__media__item"><a class="footer__media__item__link" href="#">Add to Feedly</a></li>
         </ul>
     </footer>
 </body>
